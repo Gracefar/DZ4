@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,200&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            /* height: 1000px; */
+            margin-top: 40px;
+        }
+        button { 
+            display: flex;
+            flex-direction: row;
+            width: 101px;
+            height: 101px;
+            margin-bottom: 10px;
+            background-color: azure;
+            
+           
+        }
+        button:hover{
+            background-color: cadetblue;
+        }
+        .score {
+            display: flex;
+            flex-direction: column;
+            background-color: cadetblue;
+            width: 156px;
+            height: 156px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .score h3{
+            display: flex;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            margin-left: 24px;
+            margin-top: 32px;
+
+
+
+        }
+        button{
+            display: flex;
+            flex-direction: row;
+            color:black;
+            align-items: center;
+            text-align: center;
+            border-radius: 84px;
+            font-family: 'Montserrat', sans-serif;
+            justify-content: space-around;
+            margin-left: 82px;
+        }
+        button:hover{
+            transform: scale(1.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+            color: white;
+            transition: 1s;
+        }
+        button img {
+            border-radius: 80px;
+
+        }
+        .message h3{
+            font-family: 'Montserrat', sans-serif;
+        }
+        p{
+            width: 200px;
+            height: 200px;
+        }
+        h1{
+            font-family: 'Montserrat', sans-serif; 
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 96px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Камень-ножницы-бумага</h1>
+    <div class="score">
+        <h3>Computer: <div class="computer"></div></h3>
+        <h3>Player: <div class="player"></div></h3>
+    </div>
+    <div class="message">
+        <h3>PLayer:<div class="playerChoice"></div></h3>
+        <h3>Computer: <div class="computerChoice"></div></h3>
+
+        <h3> Winner : <div class="winner"></div></h3>
+    </div>
+
+     <div class="buttons">
+    <button>
+            <h4>Камень</h4>
+    </button>
+    <button>
+           <h4>Ножницы
+           </h4>
+    </button>
+    <button> 
+        <h4>Бумага
+        </h4>
+    </button>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
